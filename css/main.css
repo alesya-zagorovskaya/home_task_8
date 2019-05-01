@@ -1,9 +1,19 @@
-*{
+/*
+=============================
+ common style
+=============================
+*/
+* {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+}
+h2, h3 {
+	color: #7a2e40;
+	font-weight: bold;
+	font-size: 16px;
 }
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +21,16 @@ body {
 	line-height: 20px;
 	min-width: 400px;
 }
+/*
+=============================
+ end common style
+=============================
+*/
+/*
+=============================
+ style for header
+=============================
+*/
 .header {
 	background-color: #7a2e40;
 	text-align: right;
@@ -19,14 +39,14 @@ body {
 .shadow {
 	box-shadow: 0 6px 4px -4px rgba(0,0,0,0.3);
 }
-.shadow-pic {
-	box-shadow: 0 13px 4px -4px rgba(0,0,0,0.1);
+.menu {
+	padding-right: 20px;
 }
-a {
+.menu a {
 	color: white;
 	text-decoration: none;
 }
-a:hover {
+.menu a:hover {
 	text-decoration: underline;
 }
 .menu li{
@@ -39,21 +59,54 @@ a:hover {
 li:last-child {
 	border-right: none;
 }
+/*
+=============================
+ end style for header
+=============================
+*/
+/*
+=============================
+ style for main
+=============================
+*/
 .main {
 	display: flex;
+	padding: 0 20px;
 }
 .content {
 	padding: 30px;
 	width: 80%;
+}
+.important-box, .paws {
+	background-color: lightgrey;
+	border: 1px solid grey;
+	padding: 10px 0;
+	line-height: 30px;
+}
+.important-box {
+	line-height: 18px;
+	padding: 20px;
+	margin: 30px 0 20px;
 }
 .border {
 	border: 1px solid grey;
 }
 .border-bottom {
 	border-bottom: 1px solid grey;
+	padding: 0 0 10px;
+	margin: 0 0 10px;
 }
 .light-grey {
 	background-color: lightgrey;
+}
+.list-square {
+	padding-top: 15px;
+}
+.list-square li:before {
+	color: #7a2e40;
+	content: "\25AA";
+	padding: 0 10px 0 0;
+	font-size: 20px;
 }
 .float-left {
 	float: left;
@@ -68,19 +121,8 @@ li:last-child {
 .right-block img {
 	width: 100%;
 }
-h2, h3 {
-	color: #7a2e40;
-	font-weight: bold;
-	font-size: 16px;
-}
-.important-box, .paws {
-	background-color: lightgrey;
-	border: 1px solid grey;
-	padding: 10px 0;
-	line-height: 30px;
-}
-.important-box {
-	line-height: 18px;
+.shadow-pic {
+	box-shadow: 0 13px 4px -4px rgba(0,0,0,0.1);
 }
 .paws li:before {
 	content: url("../images/paws.png");
@@ -99,8 +141,31 @@ h2, h3 {
 h3 {
 	padding: 10px 0;
 }
-
-
+/*
+=============================
+ end style for main
+=============================
+*/
+/*
+=============================
+ style for footer
+=============================
+*/
+.footer {
+	background-color: rgba(133, 133, 133, 0.1);
+	border-top: 2px solid rgba(133, 133, 133, 0.2);
+	padding: 10px 0 10px 40px;
+}
+/*
+=============================
+ end style for footer
+=============================
+*/
+/*
+=============================
+ mobile version style
+=============================
+*/
 @media (max-width: 600px){
 
 	.content,.right-block {
@@ -111,3 +176,8 @@ h3 {
 		display: block;
 	}
 }
+/*
+=============================
+end mobile version style
+=============================
+*/
